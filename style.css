@@ -1,0 +1,124 @@
+/* Unoversal Styling */
+:root {
+  --cyan : hsl(185, 75%, 39%);
+  --dark-blue : hsl(229, 23%, 23%);
+  --grayish-blue : hsl(227, 10%, 46%);
+  --dark-gray : hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+  color: var(--grayish-blue);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--cyan);
+  text-align: center;
+  overflow: hidden;
+}
+
+h1, h2 {
+  font-size: 1.125rem;
+  color: var(--dark-blue);
+}
+
+.bg-top {
+  position: fixed;
+  left: -15%;
+  bottom: 50%;
+}
+
+.bg-bottom {
+  position: fixed;
+  right: -15%;
+  top: 50%;
+  z-index: -1;
+}
+
+.profile-card {
+  width: 21.875rem;
+  height: 23.375rem;
+  position: relative;
+  background-color: #FFF;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.background-container img{
+  vertical-align: middle;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 9.125rem;
+}
+
+.prof-pict {
+  position: absolute;
+  top: -40%;
+  left: 35%;
+  border: 5px solid white;
+  border-radius: 100%;
+}
+
+.name {
+  margin: 0.5rem 0;
+  display: inline-block;
+}
+
+.age {
+  display: inline-block;
+  font-size: 1.125rem;
+}
+
+.location {
+  font-size: 0.875rem;
+}
+
+.further-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5.5rem;
+  border-style: none;
+  border-top: 1.5px solid #E8E9EC;
+}
+
+.info-tab {
+  align-self: center;
+}
+
+.about {
+  margin-top: 0.2rem;
+  font-size: 0.625rem;
+  letter-spacing: 1.5px;
+}
+
+@media only screen and (max-width:500px) {
+  .bg-top {
+    position: fixed;
+    left: -200%;
+    bottom: 50%;
+  }
+
+  .bg-bottom {
+    position: fixed;
+    right: -200%;
+    top: 50%;
+    z-index: -1;
+  }
+}
